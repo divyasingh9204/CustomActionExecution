@@ -71,4 +71,5 @@ jobs:
           context-github: ${{ toJSON(github) }}
           change-request-details: '{ "work_notes":"Testing123","short_description":"update function changed","description":"updated description" }' #Working Version
       - name: Output of update
-        run: echo "The Status of Update Change Request Details => ${{ steps.update1.outputs.status }}"  
+        run: echo "The Status of Update Change Request Details => ${{ steps.update1.outputs.status }}"
+        
